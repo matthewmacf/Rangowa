@@ -20,8 +20,7 @@ def index(request):
 
 
 def about(request):
-    return render(request, 'rango/about.html')
-
+    return render(request, 'rango/about.html', {})
 
 def show_category(request, category_name_slug):
     context_dict = {}
