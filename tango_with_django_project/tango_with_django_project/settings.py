@@ -135,6 +135,9 @@ USE_TZ = True
 STATICFILES_DIRS = [STATIC_DIR, ]
 STATIC_URL = '/static/'
 
+LOGIN_URL = 'rango:login'
+
+LOGIN_REDIRECT_URL = 'rango:index'
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
