@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-
 {% extends 'rango/base.html' %}
 {% load staticfiles %}
-
 {% block title_block %}
     {% if category %}
         {{ category.name }}
@@ -10,7 +8,6 @@
         Unknown Category
     {% endif %}
 {% endblock %}
-
 {% block body_block %}
     {% if category %}
     <h1>{{ category.name }}</h1>
